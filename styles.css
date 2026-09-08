@@ -115,7 +115,7 @@
       min-height: 100vh;
       border-radius: 0;
       overflow: hidden;
-      background: #111418 url("assets/img/slider/item-1-min.jpg") center / cover no-repeat;
+      background: #111418 url("media/hero-poster.jpg") center / cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
