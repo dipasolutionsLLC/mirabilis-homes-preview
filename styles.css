@@ -189,8 +189,6 @@
     /* Trust */
     .trust {
       padding: 48px 0 12px;
-      display: flex;
-      justify-content: center;
     }
     .trust p {
       max-width: 38rem;
