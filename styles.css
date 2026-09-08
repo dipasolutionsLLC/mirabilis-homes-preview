@@ -188,10 +188,11 @@
 
     /* Trust */
     .trust {
-      padding: 48px 0 12px;
+      max-width: 720px;
+      margin: 0 0 40px;
+      text-align: left;
     }
     .trust p {
-      max-width: 38rem;
       margin: 0;
       text-align: left;
       font-family: var(--display);
