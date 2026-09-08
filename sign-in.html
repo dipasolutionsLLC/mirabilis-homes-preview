@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — Mirabilis Homes</title>
+  <meta name="description" content="Log in to your Mirabilis Homes account.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="auth-split">
+    <div class="auth-panel">
+      <div class="auth-top">
+        <a class="logo" href="index.html" aria-label="Mirabilis Homes">
+          <img class="logo-dark" src="assets/img/logo-mirabilis.svg" alt="Mirabilis Homes" style="display:block">
+        </a>
+        <a class="back-link" href="index.html">Back to Main Page</a>
+      </div>
+      <main id="main" class="auth-form">
+        <h1>Welcome back</h1>
+        <p class="sub">Continue with Google or enter account details</p>
+        <form id="signinForm" action="#" method="post">
+          <div class="oauth">
+            <a href="#"><img src="media/google-icon.svg" alt=""> Continue with Google</a>
+            <a href="#"><img src="media/microsoft-outlook.svg" alt=""> Continue with Outlook</a>
+          </div>
+          <div class="divider">or</div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+            <p style="margin-top:8px;font-size:13px"><a href="#">Forgot your password?</a></p>
+          </div>
+          <button class="btn btn-dark" type="submit">Log in</button>
+          <p class="auth-alt">Don’t have an account? <a href="get-pre-qualified.html">Sign up</a></p>
+          <p class="form-ok" id="formOk" hidden>Prototype only — this form is visual. Nothing is sent.</p>
+        </form>
+      </main>
+    </div>
+    <aside class="auth-visual" aria-hidden="true">
+      <img src="media/sign-in-banner.png" alt="">
+    </aside>
+  </div>
+  <script>
+    document.getElementById("signinForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      window.location.href = "journey/step-1.html";
+    });
+  </script>
+</body>
+</html>
