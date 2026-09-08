@@ -40,7 +40,8 @@
 
     .wrap {
       width: min(var(--max), calc(100% - 80px));
-      margin-inline: auto;
+      margin-left: 40px;
+      margin-right: auto;
     }
 
     /* Header — transparent over video, solid after scroll */
@@ -58,6 +59,9 @@
     .nav-inner {
       display: flex; align-items: center; justify-content: space-between;
       min-height: 80px; gap: 24px;
+      width: calc(100% - 80px);
+      margin-left: 40px;
+      margin-right: 40px;
     }
     .logo img { height: 36px; width: auto; }
     .logo-light { filter: brightness(0) invert(1); }
@@ -164,7 +168,7 @@
     .hero-bottom {
       position: relative; z-index: 2;
       width: min(var(--max), calc(100% - 80px));
-      margin: 0 auto 48px;
+      margin: 0 0 48px 40px;
     }
     .search {
       background: var(--white);
@@ -410,8 +414,9 @@
       .menu-toggle { display: block; }
       .logo img { height: 32px; }
       .hero-copy { padding: 0 0 20px; }
-      .wrap { width: calc(100% - 32px); }
-      .hero-bottom { width: calc(100% - 32px); margin-bottom: 20px; }
+      .wrap { width: calc(100% - 32px); margin-left: 16px; margin-right: auto; }
+      .nav-inner { width: calc(100% - 32px); margin-left: 16px; margin-right: 16px; }
+      .hero-bottom { width: calc(100% - 32px); margin: 0 0 20px 16px; }
       .search {
         grid-template-columns: 1fr 1fr;
       }
