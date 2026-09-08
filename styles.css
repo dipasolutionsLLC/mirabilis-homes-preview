@@ -188,11 +188,22 @@
 
     /* Trust */
     .trust {
-      padding: 40px 0 8px;
+      padding: 48px 0 12px;
+      display: flex;
+      justify-content: center;
     }
     .trust p {
-      font-size: 18px; color: var(--ink);
-      max-width: 52ch; line-height: 1.45;
+      max-width: 38rem;
+      margin: 0;
+      text-align: left;
+      font-family: var(--display);
+      font-size: clamp(20px, 2.15vw, 26px);
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      padding-left: 22px;
+      border-left: 3px solid var(--accent);
     }
 
     /* Sections */
