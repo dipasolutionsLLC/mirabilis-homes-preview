@@ -754,20 +754,6 @@ body.journey { background: var(--paper); }
 .auth-form .btn { width: 100%; border-radius: 8px; }
 .auth-alt { text-align: center; margin-top: 16px; font-size: 15px; }
 .auth-alt a { color: var(--accent-deep); font-weight: 600; }
-.oauth { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0 20px; }
-.oauth a {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  border: 1px solid var(--line); border-radius: 8px; padding: 11px 12px;
-  text-decoration: none; font-size: 13px; font-weight: 600;
-}
-.oauth img { width: 18px; height: 18px; }
-.divider {
-  display: flex; align-items: center; gap: 12px;
-  color: var(--ink-soft); font-size: 13px; margin: 4px 0 18px;
-}
-.divider::before, .divider::after {
-  content: ""; flex: 1; height: 1px; background: var(--line);
-}
 .auth-visual {
   position: relative;
   min-height: 100vh;
@@ -796,5 +782,4 @@ body.journey { background: var(--paper); }
   .auth-visual { display: none; }
   .auth-panel { padding: 20px 20px 48px; }
   .form-row { grid-template-columns: 1fr; }
-  .oauth { grid-template-columns: 1fr; }
 }
